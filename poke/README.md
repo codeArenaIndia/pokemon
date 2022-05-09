@@ -33,22 +33,22 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 **Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-Features added:
+### `Features added`:
 
-Listing card based layout
-Filter by name and abilities
-Sort by name, height and weight
-Card count change to 10,20 and 50
-Pagination
-Page refresh support
-Details page with go back functionality.
+Listing card based layout,
+Filter by name and abilities,
+Sort by name, height and weight,
+Card count change to 10,20 and 50,
+Pagination,
+Page refresh support,
+Details page with go back functionality,
 
-Keyboard navigation 
-Performance : code splitting added.
-Test case: 1 test case
+Keyboard navigation ,
+Performance : code splitting added,
+Test case: 1 test case,
 
 
-
+### `End `:
 
 If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
