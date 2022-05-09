@@ -1,10 +1,14 @@
 # pokemon
 
+##How to run the application?
 
-Open poke folder  in any code editor
-Run npm install
-After the install is successfull, Run npm start.
-This will launch the application on http://localhost:3000/.
+##Open poke folder  in any code editor
+
+##Run npm install
+
+##After the install is successfull, Run npm start.
+
+##This will launch the application on http://localhost:3000/.
 
 ------- Play -------
 
