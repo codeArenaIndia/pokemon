@@ -1,9 +1,14 @@
 # pokemon
-Please go to poke folder
 
 
+Open poke folder  in any code editor
+Run npm install
+After the install is successfull, Run npm start.
+This will launch the application on http://localhost:3000/.
 
-Project to use pokeapi
+------- Play -------
+
+
 
 Features:
 Listing card based layout
