@@ -1,0 +1,117 @@
+.search-input{
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid var(--border);
+    border-radius: 4px;
+    font-size: 14px;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.select-input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 2px solid var(--border);
+    float: right;
+    margin-top: 5px;
+
+}
+
+.nav-btn{
+    background-color: var(--bg);
+    border: 2px solid var(--border);
+    padding: 10px;
+    text-decoration: none;
+    margin: 0 0 0 4vh;
+    width: 7.5vw;
+    overflow: hidden;
+    cursor: pointer;
+    @include query(mobile){
+        width: 50vw;
+    }
+}
+
+
+header{
+    display: flex;
+    flex-direction: row;
+    gap: 4vh;
+    width: 93vw;
+    padding-left: 3vw;
+    .footer-label{
+        margin-bottom: 5px;
+    }
+    @include query(mobile){
+        flex-direction: column;
+        margin:0;
+        &>div{
+            margin: 0 4vh;
+        }
+    }
+}
+
+header > div{
+  
+    display: flex;
+    align-items: start;
+    flex-basis: 33.3333333333%;
+    flex-direction: column;
+}
+.nav-box{
+    align-items: end;
+    justify-content: center;
+}
+.pagination{
+    display: flex;
+    justify-content: end;
+    flex-direction: row;
+    @include query(mobile){
+        width: 86vw;
+    }
+}
+
+footer{
+    height: 75px;
+    display: flex;
+    justify-content: end;
+    .nav-box{
+        display: flex;
+        flex-direction: column;
+    }
+    .pagination{
+        display: flex;
+        justify-content: end;
+        margin: 10px 35px 20px 10px;
+        .nav-btn{
+            height: 40px;
+
+        }
+    }
+    .footer-label{
+        margin-bottom: 5px;
+        margin-right: 11vh;
+        height: 17px;
+        @include query(mobile){
+            float: right;
+            margin-right: 6vh;
+        }
+    }
+}
+
+.logo{
+    margin-left: 40px;
+}
+
+.search label{
+    font-size: 15px;
+}
+.go-back{
+    background-color: var(--bg);
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+    border: 2px solid var(--border);
+}
+
