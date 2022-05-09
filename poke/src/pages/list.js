@@ -23,6 +23,10 @@ const  List=()=>{
     let navaigate = useNavigate();
 
     useEffect(()=>{
+        populateFields();
+    },[])
+    
+    const populateFields = () =>{
         let searchParams = new URLSearchParams(location.search);
         let seachQuery = searchParams.get('searchQuery');
         let filterValue = searchParams.get('filterValue');
@@ -40,19 +44,6 @@ const  List=()=>{
         if(offsetVal){
             setOffset(offsetVal);
         }
-    },[])
-    
-    const handlePagination = (e)=>{
-        let url = e.target.getAttribute('url');
-        let val = extractParamFromUrl(url,'offset');
-        setOffset(val);
-        createPersistanceObj("offset",val);
-        setUrl(url)
-    }
-
-    const modifyUrl = (count) =>{
-       let url = `https://pokeapi.co/api/v2/pokemon?limit=${count}&offset=0`;
-       setUrl(url);
     }
 
     const searchAndSort = (items)=>{
@@ -73,6 +64,14 @@ const  List=()=>{
         searchParams.set(type, val);
         let search = searchParams.toString();
         history.push({search:search })
+    }
+
+    const handlePagination = (e)=>{
+        let url = e.target.getAttribute('url');
+        let val = extractParamFromUrl(url,'offset');
+        setOffset(val);
+        createPersistanceObj("offset",val);
+        setUrl(url)
     }
 
     const handleFiler = (e)=>{
@@ -104,6 +103,11 @@ const  List=()=>{
         navaigate('/');
         setUrl(CONFIG.BASE_URL);
     }
+
+    const modifyUrl = (count) =>{
+        let url = `${CONFIG.BASE_URL}&limit=${count}`;
+        setUrl(url);
+     }
 
     return (
         <>

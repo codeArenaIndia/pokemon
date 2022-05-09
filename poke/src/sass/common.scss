@@ -28,8 +28,6 @@ $bp : (
 
 @mixin query($display){
     @each $key, $value in $bp{
-      
-      //  defining max-width
       @if ($display == $key){
         @media (max-width: $value){@content;}
       }
@@ -54,54 +52,31 @@ button {
     cursor: pointer;
     border: 0;
 }
-     
-    
 
 li > ul,
 li > ol {
     margin-bottom: 0; 
-}  
+}
 
 img {
     max-width: 100%;
     font-style: italic;
     vertical-align: middle;
 }
+
 img[width],
 img[height] {
     max-width: none; 
 }
+
 ol,ul {
     list-style: none;
 }
 
-
 .flex {
     display: flex;
 }
-.flex-wrap {
-    flex-wrap: wrap;
-}
-.f-center-x {
-    justify-content: center;
-}
-.f-center-y {
-    align-items: center;
-}
-.f-btw {
-    justify-content: space-between;
 
-}
 .m-40{
     margin:40px;
-}
-
-@mixin query($display){
-    @each $key, $value in $bp{
-        
-        //  defining max-width
-        @if ($display == $key){
-        @media (max-width: $value){@content;}
-        }
-    }
 }
