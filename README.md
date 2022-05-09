@@ -1,4 +1,8 @@
 # pokemon
+Please go to poke folder
+
+
+
 Project to use pokeapi
 
 Features:
