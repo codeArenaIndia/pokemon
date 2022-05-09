@@ -1,10 +1,10 @@
 
 import Card from  './card';
 
-const CardList = ({ data}) =>{
+const CardList = ({searchAndSort, data, showDetails}) =>{
     return(
         <ul className="card-grid">
-            {data && data.length && data.map(({image, name, height, weight, abilities, id ,smallImage}) => (
+            {searchAndSort(data && data.length && data.map(({image, name, height, weight, abilities, id ,smallImage}) => (
                 <li key={id}
                     searchtext={`${name} ${abilities}`} 
                     height={height} 
@@ -18,10 +18,11 @@ const CardList = ({ data}) =>{
                         id={id} 
                         image={image} 
                         smallImage={smallImage} 
+                        showDetails={showDetails} 
                         data={data}
                     />           
                 </li>
-            ))}
+            )))}
         </ul>
     )
 }
