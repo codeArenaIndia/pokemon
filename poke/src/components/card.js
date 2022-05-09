@@ -11,7 +11,7 @@ const Card = ({image, name, height, weight,  abilities , id , showDetails}) => {
                 </div>
                 <div className="card-content">
                     <h2 className="card-name">
-                        {name}
+                        {name.toUpperCase()}
                     </h2>
                     <ul className="card-list">
                         <li>Height: <span>{height}</span></li>
