@@ -1,5 +1,8 @@
 ##How to run the application?
 
+##Download the zip file
+
+## open in any code editor
 
 ##Run npm install
 
