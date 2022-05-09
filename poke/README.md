@@ -1,3 +1,18 @@
+##How to run the application?
+
+
+##Run npm install
+
+##After the install is successfull, Run npm start.
+
+##This will launch the application on http://localhost:3000/.
+
+
+
+--------------------------
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
